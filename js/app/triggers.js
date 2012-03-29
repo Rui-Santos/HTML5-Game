@@ -16,4 +16,5 @@
             if (String.fromCharCode(e.keyCode?e.keyCode:e.charCode)==' ') game.spacekey();
             break;
         }
-   });
+    });
+    $('i#volume').click(function(){console.log('mute');window.game.mute();});
