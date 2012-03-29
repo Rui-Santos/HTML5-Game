@@ -1,7 +1,10 @@
 .span12#game {
     margin:0 auto;
-    width:500px;
-    float:none
+    width:640px;
+    float:none;
+    background:#F0F0F0;
+    padding:5px;
+    height:360px
 }
 #volume {
     float:right;
