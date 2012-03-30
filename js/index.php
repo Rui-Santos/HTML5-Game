@@ -1,15 +1,19 @@
 <?php
-$appJS = array( 'app/game.js', 'app/triggers.js' );
+$appJS = array( 'app/d', 'app/game', 'app/triggers' );
 header( 'Content-type: text/javascript; charset: UTF-8' );
 echo '$(document).ready(function(){'."\n";
+echo '    if (!Modernizr.localstorage)window.location="badbrowser.php?for=localstorage";'."\n";
 $appJSDir = dirname(__FILE__).'/';
 foreach ( $appJS as $js ) {
-    if ( $js=='.' || $js=='..' ) continue;
-    $jsH = fopen( $appJSDir.$js, 'r' );
-    echo fread( $jsH, filesize( $appJSDir.$js ) )."\n";
+    $thisFile = $appJSDir.$js.'.';
+    if ( is_file( $thisFile.'min.js' ) ) $thisFile.='min.js';
+    else $thisFile.='js';
+    $jsH = fopen( $thisFile, 'r' );
+    echo fread( $jsH, filesize( $thisFile ) )."\n";
     fclose( $jsH );
-    flush();
+    flush(  );
 }
-echo "\n    game.init()\n".'});';
+echo "    game.init()\n";
+echo '});';
 flush(  );
 ?>

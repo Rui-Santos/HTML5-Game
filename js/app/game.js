@@ -10,15 +10,15 @@
         spacekey:function(){console.log('Fired: Space key/bar');},
         spacebar:function(){game.spacekey();}, // Just an alias to the spacekey function.
         setDefaults:function(){
-            if ( !store.get('volume') ) store.set('volume',3);
-            if ( !store.get('level') ) store.set('level',1);
-            if ( !store.get('name') ) store.set('name','');
+            if ( !window.d.r('volume') ) d.w('volume',3);
+            if ( !window.d.r('level') ) d.w('level',1);
+            if ( !window.d.r('name') ) d.w('name','');
         },
         loadSettings:function(){
             window.game.setDefaults();
-            window.game.volume=store.get('volume');
-            window.game.level=store.get('level');
-            window.game.name=store.get('name');
+            window.game.volume=window.d.r('volume');
+            window.game.level=window.d.r('level');
+            window.game.name=window.d.r('name');
         },
         init:function(){
             $('#game').html(''); // Remove the loading IMG.
@@ -41,7 +41,7 @@
         },
         play:function(){
             // Play the game.
-            store.set('name',$('#nameinput').val());
+            d.w('name',$('#nameinput').val());
             window.game.loadSettings();
             $('#nameinputform').remove();
             $('#game').append('<img id="player" src="img/player/0.png" alt>');
