@@ -18,6 +18,6 @@
             </div>
         </div>
     </div>
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script><script src="js/modernizr.js"></script><script src="js/bootstrap.min.js"></script><script src="js/store.min.js"></script><script src="js/<?php if ( is_file( 'js/min.js' ) ) echo 'min.js';?>"></script>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script><script src="js/modernizr.js"></script><script src="js/bootstrap.min.js"></script><script src="js/<?php if ( is_file( 'js/min.js' ) ) echo 'min.js';?>"></script>
 </body>
 </html>
