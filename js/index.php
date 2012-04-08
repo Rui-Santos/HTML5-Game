@@ -1,5 +1,7 @@
 <?php
-$appJS = array( 'app/d', 'app/game', 'app/triggers' );
+if ( !defined( 'ROOT' ) ) define( 'ROOT', dirname( dirname( __FILE__ ) ) );
+require_once( ROOT.'/m.php' );
+$appJS = array( 'app/game' );
 header( 'Content-type: text/javascript; charset: UTF-8' );
 echo '$(document).ready(function(){'."\n";
 echo '    if (!Modernizr.localstorage)window.location="badbrowser.php?for=localstorage";'."\n";

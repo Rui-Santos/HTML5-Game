@@ -1,0 +1,8 @@
+Now there's a plan.
+I'm going to make a "Crypto" game.
+It's going to use a basic substitution algorithm, and the substitution will be randomized every time.
+Substitutions work like this:
+
+Rules: A->x, B->y, C->z
+Input: ABC
+Output: xyz

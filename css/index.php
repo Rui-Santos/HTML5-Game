@@ -1,4 +1,6 @@
 <?php
+if ( !defined( 'ROOT' ) ) define( 'ROOT', dirname( dirname( __FILE__ ) ) );
+require_once( ROOT.'/m.php' );
 $appCSS = array( 'bootstrap.min.css', 'bootstrap-responsive.min.css', 'app.css' );
 header( 'Content-type: text/css; charset: UTF-8' );
 $appCSSDir = dirname(__FILE__).'/';
