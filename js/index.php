@@ -15,7 +15,6 @@ foreach ( $appJS as $js ) {
     fclose( $jsH );
     flush(  );
 }
-echo "    game.init()\n";
 echo '});';
 flush(  );
 ?>

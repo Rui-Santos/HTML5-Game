@@ -1,4 +1,7 @@
-    $( '#loading' ).attr( 'style', 'width:50%' );
+    $( '#loading' ).attr( 'style', 'width:30%' );
     $.ajax({
-    	url:''
+        url:$('#homeurl').attr('href')+'/encode.php?id='+$('#game').attr('data-crypto-id'),
+        complete:function(data){
+            
+        }
     })

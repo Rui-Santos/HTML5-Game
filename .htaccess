@@ -1,0 +1,4 @@
+﻿RewriteEngine On
+RewriteRule ^play/random index.php [NC]
+RewriteRule ^play/([^/]+) index.php?id=$1 [NC]
+RewriteRule ^play/([^/]+)/ /index.php?id=$1 [NC]
