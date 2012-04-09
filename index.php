@@ -12,7 +12,7 @@ showTop( 1 );
 
 <div class="row">
     <div class="span12" id="game" data-crypto-id="<?php echo $_GET[ 'id' ];?>">
-        <div class="progress progress-striped active">
+        <div class="progress progress-striped active" id="loadingcontainer">
             <div class="bar" style="width: 1%;" id="loading"></div>
         </div>
     </div>

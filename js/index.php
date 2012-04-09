@@ -1,10 +1,11 @@
 <?php
 if ( !defined( 'ROOT' ) ) define( 'ROOT', dirname( dirname( __FILE__ ) ) );
 require_once( ROOT.'/m.php' );
-$appJS = array( 'app/game' );
+$appJS = array( 'app/game', 'app/game.modals', 'app/game.encoded', 'app/init' );
 header( 'Content-type: text/javascript; charset: UTF-8' );
 echo '$(document).ready(function(){'."\n";
 echo '    if (!Modernizr.localstorage)window.location="badbrowser.php?for=localstorage";'."\n";
+echo '    window.homeurl="'.HOME_URL.'"'."\n";
 $appJSDir = dirname(__FILE__).'/';
 foreach ( $appJS as $js ) {
     $thisFile = $appJSDir.$js.'.';

@@ -1,7 +1,12 @@
-    $( '#loading' ).attr( 'style', 'width:30%' );
-    $.ajax({
-        url:$('#homeurl').attr('href')+'/encode.php?id='+$('#game').attr('data-crypto-id'),
-        complete:function(data){
-            
+    $('#loading').attr('style','width:5%');
+    window.game={
+        call:$.Callbacks(),
+        r:function(name){
+            // r is short for Register (as in register/add a callback)
+            window.game.call.add(name);
+        },
+        fin:function(){
+            $('#loading').attr('style','width:100%');
+            $('#loadingcontainer').remove();
         }
-    })
+    };
