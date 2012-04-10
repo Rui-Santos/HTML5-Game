@@ -1,10 +1,7 @@
     window.game.encoded=function(){$.ajax({
         url:window.homeurl+'/encode.php?id='+$('#game').attr('data-crypto-id'),
-        beforeSend:function(){
-            $('#loading').attr('style','width:24%');
-        },
         success:function(data){
-            $('#loading').attr('style','width:75%');
+            $('#loading').attr('style','width:100%');
             $('#game').append(data);
             window.game.fin();
         }
