@@ -1,11 +1,8 @@
     window.game.modals=function(){$.ajax({
         url:window.homeurl+'/mkmodals.php',
-        beforeSend:function(){
-            $('#loading').attr('style','width:12%');
-        },
         success:function(data){
             $('#game').append(data);
-            $('#loading').attr('style','width:20%');
+            $('#loading').attr('style','width:70%');
             window.game.encoded();
             window.game.modalh();
         }

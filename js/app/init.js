@@ -1,2 +1,2 @@
-    $('#loading').attr('style','width:10%');
+    $('#loading').attr('style','width:30%');
     window.game.call.fire();

@@ -1,4 +1,4 @@
-    $('#loading').attr('style','width:5%');
+    $('#loading').attr('style','width:15%');
     window.game={
         call:$.Callbacks(),
         r:function(name){

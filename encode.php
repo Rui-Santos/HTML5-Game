@@ -4,7 +4,7 @@ require_once( ROOT.'/m.php' );
 $idR = strval( mysql_real_escape_string( $_GET[ 'id' ] ) ); // This will be the semi-sanitized ID
 $id = ''; // This will be the 100% sanitized ID
 for ( $c=1; $c <= strlen( $idR ); $c++ ) {
-    if ( strpos( '0123456789', $idR[ $c-1 ] ) ) $id.=$idR[ $c-1 ];
+    if ( strpos( ' 0123456789', $idR[ $c-1 ] ) ) $id.=$idR[ $c-1 ];
 }
 $dataR = mysql_query( 'SELECT data FROM '.MYSQL_TABLE_NAME.' WHERE id='.$id ) or die('Big fail');
 if ( mysql_num_rows( $dataR ) < 1 ) die( '<h1>404 - Crypto Not Found!</h1>' );
