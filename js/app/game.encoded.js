@@ -1,4 +1,4 @@
-    window.game.encoded=function(){console.log('encoded fired');$.ajax({
+    window.game.encoded=function(){$.ajax({
         url:window.homeurl+'/encode.php?id='+$('#game').attr('data-crypto-id'),
         beforeSend:function(){
             $('#loading').attr('style','width:24%');

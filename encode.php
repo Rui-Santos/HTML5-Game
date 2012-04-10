@@ -16,7 +16,7 @@ $lettersUnused = array( 'key'=>strtolower( $alphabet ), 'val'=>strtoupper( $alph
 while ( strlen( strval( $lettersUnused[ 'key' ] ) ) >= 1 ) {
     $key=$lettersUnused[ 'key' ][ mt_rand( 0, strlen( $lettersUnused[ 'key' ] )-1 ) ];
     $val=$lettersUnused[ 'val' ][ mt_rand( 0, strlen( $lettersUnused[ 'val' ] )-1 ) ];
-    $substitutions[ $key ] = '<a href="#l'.strtolower( $val ).'" data-toggle="modal">'.$val.'</a>';
+    $substitutions[ $key ] = '<a href="#l'.strtolower( $val ).'" data-toggle="modal" class="o'.strtolower( $val ).'">'.$val.'</a>';
     $lettersUnused[ 'key' ]=str_replace( $key, '', $lettersUnused[ 'key' ] );
     $lettersUnused[ 'val' ]=str_replace( $val, '', $lettersUnused[ 'val' ] );
 }

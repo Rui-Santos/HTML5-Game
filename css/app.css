@@ -1,12 +1,5 @@
-.span12#game {
-    margin:0 auto;
-    width:640px;
-    float:none;
-    background:#FFFFFF;
-    padding:5px;
-    height:360px
-}
-body{padding:50px 0}
-/*#volume {
-    float:right;
-}*/
+#game {margin:0 auto;float:none;padding:5px;}
+#game,#game a{font-size:30px;font-family:'Open Sans Condensed',"Helvetica Neue",Helvetica,Arial,sans-serif;line-height:120%}
+@media (min-width: 980px){body{margin-top:50px}}
+#game {background:#FFFFFF;/*height:360px;width:640px*/}
+#game a.changed{color:purple}

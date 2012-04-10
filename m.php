@@ -16,11 +16,11 @@ if ( !mysql_num_rows( $tableExists ) ) {
 }
 
 function showTop( $p=1 ) {
-    echo '<!doctype html><html class="no-js" lang="en"><head>';
+    echo '<!doctype html><html class="no-js" lang="en"><head><link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet" type="text/css">';
     echo '<title>Crypto Game</title>';
     echo '<meta name="description" content="">';
     echo '<meta name="author" content="James Costian">';
-    echo '<meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="'.HOME_URL.'/'.( is_file( ROOT.'/gen/min.css' )?'gen/min.css':'css/' ).'"><!--[if lt IE 9]><script src="'.HOME_URL.'/js/html5.js"></script><![endif]--></head><body>';
+    echo '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="'.HOME_URL.'/'.( is_file( ROOT.'/gen/min.css' )?'gen/min.css':'css/' ).'"><!--[if lt IE 9]><script src="'.HOME_URL.'/js/html5.js"></script><![endif]--></head><body>';
     echo '<div class="navbar navbar-fixed-top">';
     echo '<div class="navbar-inner"><div class="container"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>';
     echo '<a class="brand" href="'.HOME_URL.'/play/random">Crypto Game</a>';
@@ -32,8 +32,8 @@ function showTop( $p=1 ) {
 }
 function showBottom(  ) {
     echo '</div>';
-    if ( is_file( ROOT.'/gen/min.js' ) ) echo '<script src="'.HOME_URL.'/gen/min.js">';
-    else echo '<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script><script src="'.HOME_URL.'/js/modernizr.js"></script><script src="'.HOME_URL.'/js/bootstrap.min.js"></script><script src="'.HOME_URL.'/js/"></script>';
+    if ( is_file( ROOT.'/gen/min.js' ) ) echo '<script src="'.HOME_URL.'/gen/min.js"></script><script type="text/javascript">window.homeurl="'.HOME_URL.'";</script>';
+    else echo '<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script><script src="'.HOME_URL.'/js/bootstrap.min.js"></script><script src="'.HOME_URL.'/js/"></script>';
     echo '</body></html>';
     exit(  );
 }

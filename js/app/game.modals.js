@@ -1,4 +1,4 @@
-    window.game.modals=function(){console.log('modals fired');$.ajax({
+    window.game.modals=function(){$.ajax({
         url:window.homeurl+'/mkmodals.php',
         beforeSend:function(){
             $('#loading').attr('style','width:12%');
@@ -7,6 +7,7 @@
             $('#game').append(data);
             $('#loading').attr('style','width:20%');
             window.game.encoded();
+            window.game.modalh();
         }
     })};
     window.game.r(window.game.modals);
