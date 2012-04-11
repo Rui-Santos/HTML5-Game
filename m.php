@@ -1,4 +1,5 @@
 <?php
+global $profanity;
 if ( !defined( 'ROOT' ) ) define( 'ROOT', dirname( __FILE__ ) );
 if ( !function_exists( 'tryDef' ) ) {
     function tryDef( $name, $val ) {
@@ -16,7 +17,7 @@ if ( !mysql_num_rows( $tableExists ) ) {
 }
 
 function showTop( $p=1 ) {
-    echo '<!doctype html><html class="no-js" lang="en"><head><link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet" type="text/css">';
+    echo '<!doctype html><html class="no-js" lang="en"><head><link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:700" rel="stylesheet" type="text/css">';
     echo '<title>Crypto Game</title>';
     echo '<meta name="description" content="">';
     echo '<meta name="author" content="James Costian">';

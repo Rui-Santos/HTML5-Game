@@ -1,3 +1,5 @@
 ﻿RewriteEngine On
 RewriteRule ^play/random index.php [NC]
+RewriteRule ^play$ index.php [NC]
 RewriteRule ^play/([A-Za-z0-9-]+) index.php?id=$1 [NC]
+RewriteRule ^encode/([A-Za-z0-9-]+) encode.php?id=$1 [NC]

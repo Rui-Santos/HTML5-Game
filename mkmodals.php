@@ -1,8 +1,13 @@
 <?php
 if ( !defined( 'ROOT' ) ) define( 'ROOT', dirname( __FILE__ ) );
-require_once( ROOT.'/m.php' );
 $gen = ROOT.'/gen/mkmodals.htm';
-if ( is_file( $gen ) ) require_once( $gen );
+if ( is_file( $gen ) ) {
+    require_once( $gen );
+    flush(  );
+    require_once( ROOT.'/m.php' );
+    exit(  );
+}
+require_once( ROOT.'/m.php' );
 $alphabet = 'abcdefghijklmnopqrstuvwxyz';
 for ( $c=0; $c<strlen( $alphabet ); $c++ ) {
     $l = strtolower( $alphabet[ $c ] );?>
