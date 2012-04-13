@@ -4,7 +4,7 @@ if ( !defined( 'ROOT' ) ) define( 'ROOT', dirname( __FILE__ ) );
 require_once( ROOT.'/m.php' );
 showTop( 2 );
 $data = false;
-$msg = 'Just type in some text:';
+$msg = 'Please enter some text:';
 if ( isset( $_POST[ 'data' ] ) ) {
     $data = $_POST[ 'data' ];
     $fail = false;
