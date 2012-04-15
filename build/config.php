@@ -8,6 +8,7 @@ tryDef( 'MYSQL_USER', 'crypto' );
 tryDef( 'MYSQL_PASS', '' );
 tryDef( 'MYSQL_DB', 'test' );
 tryDef( 'MYSQL_TABLE_NAME', 'crypto_game' );
+tryDef( 'PROVIDE_ORIGIN', false );
 $profanity = array(
     // Put words you want censored here
 );

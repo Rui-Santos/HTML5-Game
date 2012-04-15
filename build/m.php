@@ -28,7 +28,7 @@ function showTop( $p=1 ) {
     echo '<div class="nav-collapse"><ul class="nav">';
     echo '<li><a href="'.HOME_URL.'">New Game</a></li>';
     echo '<li'.( $p==2?' class="active"':'' ).'><a href="'.HOME_URL.'/add.php">Add</a></li>';
-    echo '<li'.( $p==3?' class="active"':'' ).'><a href="'.HOME_URL.'/rules.php">Rules</a></li>';
+    echo '<li'.( $p==3?' class="active"':'' ).'><a href="'.HOME_URL.'/help.php">Help</a></li>';
     echo '</ul></div></div></div></div><div class="container">';
 }
 function showBottom(  ) {
