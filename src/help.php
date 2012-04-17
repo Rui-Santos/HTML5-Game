@@ -9,7 +9,8 @@ showTop( 3 );
         <p><h1>How to play</h1></p>
         <p>Playing the game is very easy. To play the game, just click on "<a href="<?php echo HOME_URL;?>">New Game</a>". That will launch a new game, and if you are currently playing the game and you click on it, you  will lose your progress in the current game and start a new one. Clicking on the name ("Crypto Game") is just like clicking on "New Game".</p>
         <p>There are <?php if ( defined( 'PROVIDE_ORIGIN' )?PROVIDE_ORIGIN:false ) echo '3'; else echo '2';?> tabs. The first is called "Main". The main tab has the <abbr title="The 'Cipher Text' is basically the encrypted version of 'Data' (which is explained in the Data section of this page.">cipher text</abbr>. You can click on a letter, and type in what you think it is. Examples are on the right. If nothing happens when you click on the letter and type, then the text box is probably not focused. Simply click on the text box and type the letter.</p>
-        <?php if ( defined( 'PROVIDE_ORIGIN' )?PROVIDE_ORIGIN:false )?><p></p><?php }?>
+        <?php if ( defined( 'PROVIDE_ORIGIN' )?PROVIDE_ORIGIN:false ){?><p>The second tab is the "Original" tab. It is like the Main tab, but you can't click on the letters, so the letters can't be changed. You just see the original ciphertext.</p><?php }?>
+        <p>The last tab is the "Solution" tab. If you go to that tab, the game will ask you if you are 100% sure you want to cheat, and if you say yes, the game will tell you the data.</p>
     </div>
     <div class="span4">
         <p><h3><em>Examples</em></h3></p>

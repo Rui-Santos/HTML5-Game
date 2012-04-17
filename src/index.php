@@ -27,6 +27,16 @@ $id = $_GET[ 'id' ];
         </div>
     </div>
 </div>
+<div class="row">
+    <div class="span12 well">
+        <div class="row">
+            <div class="span4">
+                <a href="#!/hint:next" class="btn btn-info btn-large" id="givehint">Give me a hint!</a>
+            </div>
+            <div id="hint" class="span8">
+            </div>
+    </div>
+</div>
 <?php
 showBottom(  );
 exit();

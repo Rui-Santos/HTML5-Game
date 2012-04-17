@@ -18,7 +18,7 @@ if ( !isset( $_GET[ 'id' ] ) ) {
 }
 showTop( 1 );
 $id = $_GET[ 'id' ];
-?><div class="row"><div class="span12" id="game" data-crypto-id="<?php echo $id;?>"><div class="progress progress-striped active" id="loadingcontainer"><div class="bar" style="width: 1%;" id="loading"></div></div></div></div><?php
+?><div class="row"><div class="span12" id="game" data-crypto-id="<?php echo $id;?>"><div class="progress progress-striped active" id="loadingcontainer"><div class="bar" style="width: 1%;" id="loading"></div></div></div></div><div class="row"><div class="span12 well"><div class="row"><div class="span4"><a href="#!/hint:next" class="btn btn-info btn-large" id="givehint">Give me a hint!</a></div><div id="hint" class="span8"></div></div></div><?php
 showBottom(  );
 exit();
 $pagesperpage = ( 10<=$p?10:$p );

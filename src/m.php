@@ -34,7 +34,7 @@ function showTop( $p=1 ) {
 function showBottom(  ) {
     echo '</div>';
     if ( is_file( ROOT.'/gen/min.js' ) ) echo '<script src="'.HOME_URL.'/gen/min.js"></script><script type="text/javascript">window.homeurl="'.HOME_URL.'";</script>';
-    else echo '<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script><script src="'.HOME_URL.'/js/bootstrap.min.js"></script><script src="'.HOME_URL.'/js/"></script>';
+    else echo '<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script><script src="'.HOME_URL.'/js/modernizr.min.js"></script><script src="'.HOME_URL.'/js/bootstrap.min.js"></script><script src="'.HOME_URL.'/js/"></script>';
     echo '</body></html>';
     exit(  );
 }

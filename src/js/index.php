@@ -1,7 +1,7 @@
 <?php
 if ( !defined( 'ROOT' ) ) define( 'ROOT', dirname( dirname( __FILE__ ) ) );
 require_once( ROOT.'/m.php' );
-$appJS = array( 'app/game', 'app/game.modals', 'app/game.modalh', 'app/game.encoded', 'app/init' );
+$appJS = array( 'app/modernizr-check', 'app/game', 'app/game.modals', 'app/game.modalh', 'app/game.ischeating', 'app/game.encoded', 'app/init', 'app/hints' );
 header( 'Content-type: text/javascript; charset: UTF-8' );
 echo '$(document).ready(function(){'."\n";
 echo '    window.homeurl="'.HOME_URL.'"'."\n";

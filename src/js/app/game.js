@@ -8,5 +8,6 @@
         fin:function(){
             $('#loading').attr('style','width:100%');
             $('#loadingcontainer').remove();
-        }
+        },
+        hintno:1
     };

@@ -13,5 +13,6 @@
                     if (!$(this).hasClass('changed')) $(this).addClass('changed');
                 }
             });
+            window.game.ischeating();
         })
     };
